@@ -1,0 +1,54 @@
+Design Ideas
+1) All Activities, no Fragments
+2) One Activity, all Fragments
+3) Some Activities, some Fragments
+
+
+Choice: (1) (easiest for me to implement quickly)
+
+
+1) Versions
+	A) v0.1
+		1) Login set up, only works with given login credentials
+		2) Main activity displays "Hello, questing world!"
+		3) Main activity has a log out button
+		4) 
+	B) v0.2
+	C) 
+2) 
+
+
+-------
+Level 1
+-------
+
+1) v0.1
+	A) Activities
+		1) Login
+		2) Main
+		3) 
+	B) Manifest
+		1) Minimum API: 14
+		2) Target API: 19
+		3) 
+	C) Strings
+		1) Login button
+		2) Content under construction/incomplete
+		3) Log out button
+		4) "Hello, questing world!"
+		5) Login request
+		6) Invalid login
+		7) 
+	D) Issues
+		1) Cannot resolve symbol 'R' in both activities?
+		2) 
+	E) 
+2) v0.2
+	A) Activities
+		1) 
+	B) Manifest
+		1) 
+	C) Strings
+		1) 
+	D) 
+3) 
