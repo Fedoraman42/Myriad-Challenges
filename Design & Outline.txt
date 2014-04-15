@@ -7,10 +7,38 @@ Design Ideas
 Choice: (1) (easiest for me to implement quickly)
 
 
+Login Task Ideas
+1) MainActivity has a method, Login, that starts & runs LoginActivity on program start
+2) MainActivity starts & runs LoginActivity inside of onCreate, so that logging in is a part of the app's launching sequence
+3) 
+
+
+Choice: (2) (makes the most sense, seems the least convoluted on the surface)
+
+
+Program Flow (based on above choices)
+
+1) App init
+2) Main activity init
+3) Main activity calls Login activity in onCreate() (uses startActivityForResult)
+4) Login activity init
+5) Login activity checks entered username and password against a list of accepted login credentials
+6) If check fails, indicate error(s)
+7) If check succeeds, return successful login
+8) Let users register (just add the button for now, add content later)
+9) Login activity ends
+10) Main activity receives successful login
+11) Main activity lets user view quest list
+12) If a quest is selected, show quest details
+13) If log out is selected, log out & end the application
+14) 
+
+
+
 1) Versions
 	A) v0.1
 		1) Login set up, only works with given login credentials
-		2) Main activity displays "Hello, questing world!"
+		2) Main activity displays a list view of quests
 		3) Main activity has a log out button
 		4) 
 	B) v0.2
@@ -26,7 +54,8 @@ Level 1
 	A) Activities
 		1) Login
 		2) Main
-		3) 
+		3) Register
+		4) 
 	B) Manifest
 		1) Minimum API: 14
 		2) Target API: 19
@@ -37,12 +66,17 @@ Level 1
 		3) Log out button
 		4) "Hello, questing world!"
 		5) Login request
-		6) Invalid login
+		6) Register button
 		7) 
 	D) Issues
 		1) Cannot resolve symbol 'R' in both activities?
-		2) 
-	E) 
+		2) Cannot resolve symbol 'activity_main' in main activity?
+		3) Cannot resolve symbol 'main' in main activity?
+	E) Notes (as found)
+		1) Will need to either modify the existing Login activity template or create my own, should accept a username instead of an email address!!!
+		2) Issues seem to pop up and resolve themselves randomly, based on how things work out when Android Studio starts up - this may be an issue (or two or five) with my laptop.  Work around this as possible.
+		3) 
+	F) 
 2) v0.2
 	A) Activities
 		1) 
@@ -52,3 +86,28 @@ Level 1
 		1) 
 	D) 
 3) 
+
+
+Tasks
+
+1) Set up Login activity
+	A) Revise template to fit requirements
+		1) Check username instead of email address
+		2) 
+	B) Store accepted login credentials, etc.
+		1) ArrayList (or equivalent)
+		2) Three columns - usernames, passwords, user type
+		3) 
+	C) Could start from scratch, base off of tutorials?
+		1) 
+	D) 
+2) Set up Main activity
+	A) Call login activity in onCreate()?
+		1) What's the proper protocol for running a login activity?
+		2) 
+	B) Store list of quests, etc.
+	C) 
+3) Minor project fixes
+	A) Update minimum project API to 14 (set to 11 somewhere?)
+	B) 
+4) 

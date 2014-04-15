@@ -1,0 +1,17 @@
+Quest Engineering Challenge - Task List
+
+1) Get LoginActivity set up
+	A) MainActivity calls LoginActivity in onCreate()
+	B) LoginActivity runs a Login method
+		1) User enters a username and password
+		2) Username and password are checked against known acceptable login credentials
+		1) If either (or both) don't match, show error(s)
+		2) Else, login when Login button is pressed
+			a) If user is a quester, show quester view in Main
+			b) Else, show quest giver view in Main
+			c) 
+		3) If Register button is pressed, start RegisterActivity
+		4) If Close button is pressed, exit app
+		5) 
+	C) 
+2) 
