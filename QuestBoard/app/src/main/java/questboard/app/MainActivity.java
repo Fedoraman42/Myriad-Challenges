@@ -7,10 +7,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity
 {
 	static final int LOGIN_REQUEST = 1;
 	static final int LOGGED_IN = 0;
+
+	Quest[] questList = new Quest[3];
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -67,15 +72,16 @@ public class MainActivity extends Activity
 
 				//finish
 			}
-			else//something messed up, show an error and end the program
+			else//something messed up, end the program
 			{
 				this.finish();//terminate the app
 				//finish?
 			}
 		}
-		else//something messed up, show an error and end the program
+		else//something messed up, end the program
 		{
-			//finish
+			this.finish();//terminate the app
+			//finish?
 		}
 	}
 
