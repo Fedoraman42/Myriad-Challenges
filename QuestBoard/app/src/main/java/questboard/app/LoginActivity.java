@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -46,28 +47,27 @@ public class LoginActivity extends Activity
 		if(name == "Lancelot" && pass == "arthurDoesntKnow")//success!
 		{
 			LOGGED_IN = 1;//a quester logged in
+			setResult(LOGGED_IN);
 
-
+			//finish?
 		}
 		else
 		{
 			//add an "invalid username or password" string to the login screen
 			//idea: set it to invisible on startup, make it visible here?
+			Toast.makeText(getApplicationContext(), "Username or password is incorrect",
+					Toast.LENGTH_SHORT).show();
 
-
-			//remove this code later
-			if(name != "Lancelot")//username is incorrect
-			{
-				//finish
-			}
-			if(pass != "arthurDoesntKnow")//password is incorrect
-			{
-				//finish
-			}
+			//finish?
 		}
 
+		//finish?
+	}
+
+	public void Quit(View view)
+	{
 		setResult(LOGGED_IN);
-		//finish
+		//finish?
 	}
 
 	@Override

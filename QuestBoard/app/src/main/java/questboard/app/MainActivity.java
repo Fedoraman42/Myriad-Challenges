@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends Activity
 {
@@ -22,6 +23,7 @@ public class MainActivity extends Activity
 		startActivityForResult(loginIntent, LOGIN_REQUEST);
 
 		//handle result from the login activity
+
 		//this.onActivityResult(LOGIN_REQUEST, LOGGED_IN, loginIntent);//is this right?
 	}
 
@@ -67,12 +69,19 @@ public class MainActivity extends Activity
 			}
 			else//something messed up, show an error and end the program
 			{
-				//finish
+				this.finish();//terminate the app
+				//finish?
 			}
 		}
 		else//something messed up, show an error and end the program
 		{
 			//finish
 		}
+	}
+
+	public void Quit(View view)
+	{
+		this.finish();//terminate the app
+		//finish?
 	}
 }
