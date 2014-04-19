@@ -22,7 +22,7 @@ public class MainActivity extends Activity
 		startActivityForResult(loginIntent, LOGIN_REQUEST);
 
 		//handle result from the login activity
-		this.onActivityResult(LOGIN_REQUEST, LOGGED_IN, loginIntent);//is this right?
+		//this.onActivityResult(LOGIN_REQUEST, LOGGED_IN, loginIntent);//is this right?
 	}
 
 
@@ -53,10 +53,16 @@ public class MainActivity extends Activity
 		{
 			if(resultCode == 1)//user logged in as a quester
 			{
+				//load quester's main view
+
+
 				//finish
 			}
 			else if(resultCode == 2)//user logged in as a quest giver
 			{
+				//load quest giver's main view
+
+
 				//finish
 			}
 			else//something messed up, show an error and end the program

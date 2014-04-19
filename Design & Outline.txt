@@ -16,13 +16,13 @@ Login Task Ideas
 Choice: (2) (makes the most sense, seems the least convoluted on the surface)
 
 
-Program Flow (based on above choices)
+Level 1 Program Flow (based on above choices)
 
 1) App init
 2) Main activity init
 3) Main activity calls Login activity in onCreate() (uses startActivityForResult)
 4) Login activity init
-5) Login activity checks entered username and password against a list of accepted login credentials
+5) Login activity checks entered username and password against a list of accepted login credentials (hard-coded for now)
 6) If check fails, indicate error(s)
 7) If check succeeds, return successful login
 8) Let users register (just add the button for now, add content later)
@@ -34,16 +34,47 @@ Program Flow (based on above choices)
 14) 
 
 
+Required Modules
+1) Level 1
+	A) MainActivity
+		1) List view
+		2) Storage data structure for quest list
+		3) Quest details view (for questers)
+		4) Create quest form (for quest givers)
+		5) Close button (exits the app)
+		6) 
+	B) LoginActivity
+		1) Storage data structure for known login credentials (later)
+		2) Username text field
+		3) Password text field
+		4) Login button
+		5) Register button
+		6) Close button (exits the app)
+		7) 
+	C) DetailsActivity
+		1) Accept/Complete quest button (for questers)
+		2) 
+	D) RegisterActivity
+		1) Placeholder content
+	E) Placeholder content
+		1) "Content not finished yet" string
+		2) Back button
+	F) 
 
-1) Versions
-	A) v0.1
-		1) Login set up, only works with given login credentials
-		2) Main activity displays a list view of quests
-		3) Main activity has a log out button
-		4) 
-	B) v0.2
+
+Level 1 Desired Working Content (by "version")
+1) v0.1
+	A) Login set up, only works with given login credentials
+	B) Main activity displays a placeholder string ("list coming soon!")
+	C) Main activity has a log out button
+	D) Main activity has an exit button
+	E) Register activity set up with placeholder content
+	F) 
+2) v0.2
+	A) Main activity displays the quest list
+	B) Details activity set up with placeholder content
 	C) 
-2) 
+3) 
 
 
 -------
@@ -73,7 +104,7 @@ Level 1
 		2) Cannot resolve symbol 'activity_main' in main activity?
 		3) Cannot resolve symbol 'main' in main activity?
 	E) Notes (as found)
-		1) Will need to either modify the existing Login activity template or create my own, should accept a username instead of an email address!!!
+		1) Creating my own login activity seems a lot easier than trying to revise the provided login activity template, just going to do that. (Updated: 4/16)
 		2) Issues seem to pop up and resolve themselves randomly, based on how things work out when Android Studio starts up - this may be an issue (or two or five) with my laptop.  Work around this as possible.
 		3) 
 	F) 

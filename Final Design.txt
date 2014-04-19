@@ -1,0 +1,457 @@
+Quest Engineering Challenge - Finalized Design
+
+----------------
+Level 1 - Normal
+----------------
+
+1) Activities (descriptions)
+	A) LoginActivity
+		1) Users can log in or exit the app
+		2) Runs an infinite loop until login succeeds or user quits
+		3) 
+	B) MainActivity
+		1) Run LoginActivity inside onCreate()
+		2) Use result of LoginActivity to either run or close the app
+		3) 
+	C) RegisterActivity
+		1) Just there for now, don't complete this yet!
+		2) 
+	D) DetailsActivity
+		1) Runs when a quest is selected in MainActivity
+		2) Should get passed a Quest object/struct
+		3) Display all details of the Quest object/struct
+		4) End the activity when the Back button is pressed
+		5) 
+	E) 
+2) Activity components & functionality
+	A) LoginActivity
+		1) 
+	B) MainActivity
+		1) LoginActivity (run inside onCreate())
+		2) 
+	C) RegisterActivity
+		1) 
+	D) DetailsActivity
+		1) 
+3) Manifest
+	A) Minimum API: 14 (or lower?)
+	B) Target API: 19
+	C) 
+4) Strings
+	A) For LoginActivity:
+		1) button_login
+		2) button_register
+		3) button_close
+		4) welcome
+		5) invalid_login
+		6) 
+	B) For MainActivity:
+		1) button_logout
+		2) 
+	C) For DetailsActivity:
+		1) quest_name
+		2) quest_posted_by
+		3) quest_reward
+		4) quest_description
+		5) 
+	D) For RegisterActivity:
+		1) 
+5) Activity XML data
+	A) For LoginActivity:
+		1) TextView (welcome message)
+		2) EditText (username)
+		3) EditText (password)
+		4) Button (login)
+		5) Button (register)
+		6) Button (close)
+		7) 
+	B) For MainActivity:
+		1) ListView (quest list)
+		2) Button (log out)
+		3) 
+	C) For DetailsActivity:
+		1) Button (back to list view)
+		2) TextView (quest name)
+		3) TextView (quest posted by)
+		4) TextView (quest reward)
+		5) TextView (quest description)
+		6) 
+	D) For RegisterActivity:
+		1) 
+	E) 
+6) Additional Class(es)
+	A) Quest
+		1) String name
+		2) String questGiver
+		3) String reward
+		4) String description
+		5) 
+	B) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+------------------------
+Level 1 - Hardmode (WIP)
+------------------------
+
+1) Activities (descriptions)
+	A) MainActivity
+2) Activity components & functionality
+	A) MainActivity
+		1) LoginFragment
+		2) MainFragment
+		3) DetailsFragment
+		4) RegisterFragment
+		5) 
+3) Manifest
+	A) Minimum API: 14 (or lower?)
+	B) Target API: 19
+	C) 
+4) Strings
+	A) For LoginFragment:
+		1) button_login
+		2) button_register
+		3) button_close
+		4) welcome
+		5) invalid_login
+		6) 
+	B) For MainFragment:
+		1) button_logout
+		2) 
+	C) For DetailsFragment:
+		1) quest_name
+		2) quest_posted_by
+		3) quest_reward
+		4) quest_description
+		5) 
+	D) For RegisterFragment:
+		1) 
+5) Activity XML data
+	A) For MainActivity:
+		1) For LoginFragment:
+			a) 
+		2) For MainFragment:
+			a) 
+		3) For DetailsFragment:
+			a) 
+		4) For RegisterFragment:
+			a) 
+	B) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+----------------
+Level 2 - Normal
+----------------
+
+1) Activities (descriptions)
+	A) LoginActivity
+		1) Users can log in or exit the app
+		2) Runs an infinite loop until login succeeds or user quits
+		3) 
+	B) MainActivity
+		1) Run LoginActivity inside onCreate()
+		2) Use result of LoginActivity to either run or close the app
+		3) 
+	C) RegisterActivity
+		1) Just there for now, don't complete this yet!
+		2) 
+	D) DetailsActivity
+		1) Runs when a quest is selected in MainActivity
+		2) Should get passed a Quest object/struct
+		3) Display all details of the Quest object/struct
+		4) End the activity when the Back button is pressed
+		5) 
+	E) SettingsActivity
+		1) Allow users to filter what quests show up in the ListView
+		2) 
+	F) 
+2) Activity components & functionality
+	A) LoginActivity
+		1) 
+	B) MainActivity
+		1) LoginActivity (run inside onCreate())
+		2) 
+	C) RegisterActivity
+		1) 
+	D) DetailsActivity
+		1) 
+3) Manifest
+	A) Minimum API: 14 (or lower?)
+	B) Target API: 19
+	C) 
+4) Strings
+	A) For LoginActivity:
+		1) button_login
+		2) button_register
+		3) button_close
+		4) welcome
+		5) invalid_login
+		6) 
+	B) For MainActivity:
+		1) button_logout
+		2) 
+	C) For DetailsActivity:
+		1) quest_name
+		2) quest_posted_by
+		3) quest_reward
+		4) quest_description
+		5) 
+	D) For RegisterActivity:
+		1) 
+5) Activity XML data
+	A) For LoginActivity:
+		1) TextView (welcome message)
+		2) EditText (username)
+		3) EditText (password)
+		4) Button (login)
+		5) Button (register)
+		6) Button (close)
+		7) 
+	B) For MainActivity:
+		1) ListView (quest list)
+		2) Button (log out)
+		3) 
+	C) For DetailsActivity:
+		1) Button (back to list view)
+		2) TextView (quest name)
+		3) TextView (quest posted by)
+		4) TextView (quest reward)
+		5) TextView (quest description)
+		6) 
+	D) For RegisterActivity:
+		1) 
+	E) 
+6) Additional Class(es)
+	A) Quest
+		1) String name
+		2) String questGiver
+		3) String reward
+		4) String description
+		5) 
+	B) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+------------------
+Level 2 - Hardmode
+------------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+----------------
+Level 3 - Normal
+----------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+------------------
+Level 3 - Hardmode
+------------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+----------------
+Level 4 - Normal
+----------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+------------------
+Level 4 - Hardmode
+------------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+----------------
+Level 5 - Normal
+----------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+------------------
+Level 5 - Hardmode
+------------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+----------------
+Level 6 - Normal
+----------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+------------------
+Level 6 - Hardmode
+------------------
+
+1) Activities (descriptions)
+	A) 
+2) Activity components & functionality
+	A) 
+3) Manifest
+	A) 
+4) Strings
+	A) 
+5) Activity XML data
+	A) 
+6) Additional Class(es)
+	A) 
+7) Issues (as found)
+	A) 
+8) Notes
+	A) 
+9) 
+
+
+[eof]

@@ -18,15 +18,10 @@ public class LoginActivity extends Activity
 	private EditText password = null;
 	private Button login;
 	private Button register;
+	private Button close;
 
-	//init list of accepted login credentials
-	ArrayList<String> TempUser = new ArrayList<String>();
-	ArrayList<ArrayList<String>> KnownUsers = new ArrayList<ArrayList<String>>();
-
-	TempUser.add("Lancelot");
-	TempUser.add("arthurDoesntKnow");
-	TempUser.add("Quester");
-	KnownUsers.add(TempUser);
+	//to send back to MainActivity
+	static int LOGGED_IN = 0;//assume not logged in
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -38,16 +33,41 @@ public class LoginActivity extends Activity
 		password = (EditText) findViewById(R.id.enter_pass);
 		login = (Button) findViewById(R.id.login);
 		register = (Button) findViewById(R.id.register);
+		close = (Button) findViewById(R.id.close);
 	}
 
 	public void Login(View view)
 	{
-		int i;
+		//set text from text fields to strings
+		String name = username.getText().toString();
+		String pass = password.getText().toString();
 
-		for(i = 0; i < TempUser.size(); i++)//loop through stored login credentials
+		//check if credentials are correct
+		if(name == "Lancelot" && pass == "arthurDoesntKnow")//success!
 		{
+			LOGGED_IN = 1;//a quester logged in
+
 
 		}
+		else
+		{
+			//add an "invalid username or password" string to the login screen
+			//idea: set it to invisible on startup, make it visible here?
+
+
+			//remove this code later
+			if(name != "Lancelot")//username is incorrect
+			{
+				//finish
+			}
+			if(pass != "arthurDoesntKnow")//password is incorrect
+			{
+				//finish
+			}
+		}
+
+		setResult(LOGGED_IN);
+		//finish
 	}
 
 	@Override
