@@ -7,14 +7,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import java.util.ArrayList;
-
 public class MainActivity extends Activity
 {
 	static final int LOGIN_REQUEST = 1;
 	static final int LOGGED_IN = 0;
 
 	Quest[] questList = new Quest[3];
+	//questList[0].setQuestTitle("Bandits in the Woods");
 
 
 	@Override
